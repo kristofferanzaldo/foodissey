@@ -1,0 +1,40 @@
+:root {
+    --main-color: #3d2014;
+    --main-dark-color: #23120b;
+    --accent-color: #fdb827;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+        ),
+        url("/img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-main {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    border-radius: 20px;
+    min-width: 200px;
+    transition: 0.4s;
+}
+
+.btn-main:hover {
+    background-color: var(--main-dark-color);
+    color: white;
+}
